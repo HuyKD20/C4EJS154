@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shion House</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" />
+    <!-- Bootstrap CSS v5.2.1 -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/blog.css" />
+  </head>
+
+  <body class="d-flex">
+    <header class="w-100 d-flex justify-content-center align-items-center">
+      <!-- place navbar here -->
+      <div class="sidebar-container">
+        <div class="sidebar-icon" id="sidebar-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="w-100 d-flex justify-content-between align-items-center">
+        <div class="left_header_container d-flex justify-content-center align-items-center gap-4">
+          <div class="header_logo">
+            <a href="index.html">
+              <img src="./imgs/logo/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="header_menu">
+            <nav>
+              <ul class="d-flex justify-content-center align-items-center gap-4">
+                <li>
+                  <a href="index.html">
+                    <p>HOME</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="shop.html">
+                    <p>SHOP</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="about.html">
+                    <p>ABOUT</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="blog.html">
+                    <p>BLOG</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="contact.html">
+                    <p>CONTACT</p>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="right_header_container d-flex justify-content-center align-items-center gap-4">
+          <div class="header_social d-flex justify-content-center align-items-center gap-4">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+          </div>
+          <div class="header_user_find_store d-flex">
+            <ul class="d-flex gap-4">
+              <li>
+                <div class="header_search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </li>
+              <li>
+                <div class="header_store" id="header_store">
+                  <img src="./imgs/gallery/card.svg" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="d-flex justify-content-center align-items-center">
+                  <a href="signup.html" class="header_user">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="pl-2 username_login" id="login_check"></span>
+                  </a>
+                  
+                </div>
+              </li>
+              <li>
+                <div class="logout_btn" id="logout_btn">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="sidebar-menu" id="sidebar-menu">
+      <ul class="d-flex flex-column justify-content-center align-items-start gap-4">
+        <li>
+          <a href="index.html">
+            <p>HOME</p>
+          </a>
+        </li>
+        <li>
+          <a href="shop.html">
+            <p>SHOP</p>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <p>ABOUT</p>
+          </a>
+        </li>
+        <li>
+          <a href="blog.html">
+            <p>BLOG</p>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <p>CONTACT</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+      <!-- ========================================== Cart Start ========================================== -->
+    <div class="shopping-cart w-25 cart-wrapper" id="shopping-cart">
+      <div class="cart-top d-flex justify-content-between p-4">
+        <p>Giỏ hàng của tôi</p>
+        <i class="fa-solid fa-xmark" id="btnCardClose"></i>
+      </div>
+      <hr class="m-0" style="border: 1px solid black" />
+      <div class="cart-bottom d-flex flex-column p-4 gap-3">
+        <!-- CART ITEM -->
+      </div>
+      <hr class="m-0" style="border: 1px solid black" />
+      <div class="totalPrice h-10 pr-3 pt-3 pl-3 d-flex align-items-start justify-content-between">
+        <p>Total: <span class="nav__mount">$ 0.00</span></p>
+        <button class="btnPurchase" id="btnPurchase">PURCHASE</button>
+      </div>
+    </div>
+          <!-- ========================================== Cart End ========================================== -->
+    <main>
+    </main>
+    <footer class="w-100">
+      <!-- place footer here -->
+      <div class="service-container categories-area section-padding40 gray-bg w-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 pl-15 pr-15">
+              <div class="single-cat mb-5">
+                <div class="cat-icon mb-4">
+                  <img src="./imgs/icon/services1.svg" alt="" />
+                </div>
+                <div class="cat-cap">
+                  <h5>Fast &amp; Free Delivery</h5>
+                  <p>Free delivery on all orders</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 pl-15 pr-15">
+              <div class="single-cat mb-5">
+                <div class="cat-icon mb-4">
+                  <img src="./imgs/icon/services2.svg" alt="" />
+                </div>
+                <div class="cat-cap">
+                  <h5>Fast &amp; Free Delivery</h5>
+                  <p>Free delivery on all orders</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 pl-15 pr-15">
+              <div class="single-cat mb-30">
+                <div class="cat-icon mb-4">
+                  <img src="./imgs/icon/services3.svg" alt="" />
+                </div>
+                <div class="cat-cap">
+                  <h5>Fast &amp; Free Delivery</h5>
+                  <p>Free delivery on all orders</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 pl-15 pr-15">
+              <div class="single-cat">
+                <div class="cat-icon mb-4">
+                  <img src="./imgs/icon/services4.svg" alt="" />
+                </div>
+                <div class="cat-cap">
+                  <h5>Fast &amp; Free Delivery</h5>
+                  <p>Free delivery on all orders</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container d-flex p-5 justify-content-between">
+        <div class="shionhouse-footer pt-5 d-flex flex-column align-items-start">
+          <img src="./imgs/logo/logo2_footer.png" alt="" class="mb-4" />
+          <p class="text-white font-weight-light mb-4">
+            Suspendisse varius enim in eros <br />
+            elementum tristique. Duis cursus, mi <br />
+            quis viverra ornare, eros dolor <br />
+            interdum nulla.
+          </p>
+          <div class="social-container-footer">
+            <div class="header_social social-icon d-flex justify-content-center align-items-center gap-4">
+              <a href="#">
+                <i class="fab fa-twitter text-white"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook-f text-white"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-pinterest-p text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="quick-links pt-5">
+          <h3 class="text-white">Quick links</h3>
+          <ul>
+            <li>
+              <a href="#">Image Licensin</a>
+            </li>
+            <li>
+              <a href="#">Style Guide</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="quick-links pt-5">
+          <h3 class="text-white">Shop Category</h3>
+          <ul>
+            <li>
+              <a href="#">Image Licensin</a>
+            </li>
+            <li>
+              <a href="#">Style Guide</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="quick-links pt-5">
+          <h3 class="text-white">Partner</h3>
+          <ul>
+            <li>
+              <a href="#">Image Licensin</a>
+            </li>
+            <li>
+              <a href="#">Style Guide</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="quick-links pt-5">
+          <h3 class="text-white">Get in touch</h3>
+          <ul>
+            <li>
+              <a href="#">Image Licensin</a>
+            </li>
+            <li>
+              <a href="#">Style Guide</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- SCRIPT -->
+    <script defer src="./js/blog.js"></script>
+  </body>
+</html>
